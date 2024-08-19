@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        /* Reset dasar untuk margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Gaya untuk body halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        /* Container utama untuk form registrasi */
+        .register-container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Gaya untuk judul form registrasi */
+        .register-container h2 {
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        /* Gaya untuk input fields */
+        .register-container input[type="text"],
+        .register-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Gaya untuk tombol registrasi */
+        .register-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect untuk tombol registrasi */
+        .register-container button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Gaya untuk teks di bawah form */
+        .register-container p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Gaya untuk link di dalam teks p */
+        .register-container p a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Hover effect untuk link */
+        .register-container p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form action="/SimpleLoginApp/RegisterServlet" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Sudah punya akun? <a href="index.html">Login</a></p>
+    </div>
+</body>
+</html>
